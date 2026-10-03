@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-primary: #0A0A0A;
+    --bg-secondary: #121214;
+    --bg-surface: #18181B;
+    --bg-elevated: #27272A;
+    
+    --accent-orange: #FF6B00;
+    --accent-orange-bright: #FF8A00;
+    --accent-orange-soft: rgba(255, 107, 0, 0.15);
+    
+    --text-primary: #FFFFFF;
+    --text-secondary: #A1A1AA;
+    --text-muted: #71717A;
+    
+    --border-subtle: rgba(255, 255, 255, 0.08);
+    --border-orange: rgba(255, 107, 0, 0.3);
+  }
+}
+
+.font-poppins {
+  font-family: var(--font-poppins), 'Poppins', system-ui, -apple-system, sans-serif;
+}
+
+.font-heading {
+  font-family: var(--font-poppins), 'Poppins', system-ui, -apple-system, sans-serif;
+}
+
+.font-body {
+  font-family: var(--font-poppins), 'Poppins', system-ui, -apple-system, sans-serif;
+}
+
+/* Orange dot matrix background pattern */
+.bg-dot-matrix {
+  background-image: radial-gradient(#FF6B00 1.5px, transparent 1.5px);
+  background-size: 18px 18px;
+}
+
+/* Orange grid overlay */
+.bg-grid-pattern {
+  background-image: linear-gradient(to right, rgba(255, 107, 0, 0.04) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(255, 107, 0, 0.04) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
